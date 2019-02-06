@@ -1,0 +1,166 @@
+.text {
+  width: 100%;
+  height: 70vh;
+  color: white; }
+  .text h1 {
+    font-size: 70px; }
+  .text p {
+    font-size: 30px; }
+
+html, body {
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-y: none; }
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../images/816.gif") 50% 50% no-repeat #fff; }
+
+#button {
+  font-size: 40px;
+  color: #902857;
+  position: fixed;
+  right: 50px;
+  bottom: 1%; }
+  @media screen and (max-width: 350px) {
+    #button {
+      right: 20px; } }
+  #button i {
+    border: 3px solid #fff;
+    border-radius: 50%; }
+
+header {
+  background: url("../images/bc.png") no-repeat;
+  background-size: cover;
+  height: 90vh; }
+  header .navbar {
+    padding: 0;
+    border-bottom: 3px solid white; }
+    header .navbar .navbar-nav {
+      margin: 0 auto;
+      height: 100%; }
+      header .navbar .navbar-nav li {
+        display: inline-block;
+        float: none;
+        padding: 0 20px;
+        margin: 5px 5px; }
+        header .navbar .navbar-nav li:hover {
+          background-color: #902857; }
+      header .navbar .navbar-nav .active {
+        background-color: #902857; }
+    header .navbar .nav-link {
+      color: white;
+      font-size: 27px; }
+    header .navbar .navbar-brand {
+      padding: 0 20px 10px;
+      margin: 0; }
+    header .navbar .navbar-brand img {
+      padding-top: 10px;
+      display: none; }
+      @media screen and (max-width: 991px) {
+        header .navbar .navbar-brand img {
+          display: block; } }
+    header .navbar .logo img {
+      padding-top: 10px; }
+      @media screen and (max-width: 991px) {
+        header .navbar .logo img {
+          display: none; } }
+    header .navbar .navbar-toggler i {
+      color: white;
+      width: 20px;
+      height: 20px;
+      padding-top: 7px; }
+
+.second .card {
+  border: none;
+  padding: 40px 0 60px 0; }
+.second .hideme {
+  opacity: 0; }
+.second p {
+  font-size: 25px; }
+.second .pp {
+  font-size: 25px; }
+
+.third {
+  background-color: #ffffff; }
+  .third .info1, .third .info2, .third .info3, .third .info4, .third .info5, .third .info6, .third .info7, .third .info8, .third .info9, .third .info10 {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1px;
+    pointer-events: none;
+    border: 2px solid white;
+    background-color: #902857; }
+    .third .info1 h3, .third .info2 h3, .third .info3 h3, .third .info4 h3, .third .info5 h3, .third .info6 h3, .third .info7 h3, .third .info8 h3, .third .info9 h3, .third .info10 h3 {
+      margin: 0;
+      color: white;
+      border-bottom: 2px solid white; }
+    .third .info1 p, .third .info2 p, .third .info3 p, .third .info4 p, .third .info5 p, .third .info6 p, .third .info7 p, .third .info8 p, .third .info9 p, .third .info10 p {
+      font-size: 15px;
+      color: white;
+      padding-top: 10px; }
+    .third .info1 span, .third .info2 span, .third .info3 span, .third .info4 span, .third .info5 span, .third .info6 span, .third .info7 span, .third .info8 span, .third .info9 span, .third .info10 span {
+      color: white;
+      font-size: 18px; }
+  .third ul {
+    padding: 0; }
+    .third ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .third li {
+    perspective: 400px;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    padding: 0;
+    list-style: none; }
+    .third li .normal1, .third li .normal2, .third li .normal3, .third li .normal4, .third li .normal5, .third li .normal6, .third li .normal7, .third li .normal8, .third li .normal9, .third li .normal10 {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      color: white; }
+
+.fifth {
+  background: url("../images/bcg112.jpg") no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%; }
+
+footer {
+  height: 140px;
+  background-color: #000;
+  color: #fff;
+  padding-top: 35px; }
+  footer p {
+    color: white;
+    font-size: 18px;
+    margin: 0; }
+    footer p a {
+      font-family: 'Poiret One', cursive;
+      color: #c3b4b4; }
+  footer a:hover {
+    text-decoration: none;
+    color: #902857; }
+  footer i {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 5px; }
+    footer i:hover {
+      color: #902857; }
+
+/*# sourceMappingURL=style.css.map */

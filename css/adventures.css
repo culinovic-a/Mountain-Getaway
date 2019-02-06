@@ -1,0 +1,232 @@
+.text {
+  width: 100%;
+  height: 70vh;
+  color: white; }
+  .text h1 {
+    font-size: 70px; }
+  .text p {
+    font-size: 30px; }
+
+html, body {
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../images/816.gif") 50% 50% no-repeat #fff; }
+
+#button {
+  font-size: 40px;
+  color: #902857;
+  position: fixed;
+  right: 50px;
+  bottom: 1%; }
+  @media screen and (max-width: 350px) {
+    #button {
+      right: 20px; } }
+  #button i {
+    border: 3px solid #fff;
+    border-radius: 50%; }
+
+header {
+  background: url("../images/imageedit_1_9240665927-min.png") no-repeat;
+  background-size: cover; }
+  header .navbar {
+    padding: 0;
+    border-bottom: 3px solid white; }
+    header .navbar .navbar-nav {
+      margin: 0 auto;
+      height: 100%; }
+      header .navbar .navbar-nav li {
+        display: inline-block;
+        float: none;
+        padding: 0 20px;
+        margin: 5px 5px; }
+        header .navbar .navbar-nav li:hover {
+          background-color: #902857; }
+      header .navbar .navbar-nav .active {
+        background-color: #902857; }
+    header .navbar .nav-link {
+      color: white;
+      font-size: 27px; }
+    header .navbar .navbar-brand {
+      padding: 0 20px 10px;
+      margin: 0; }
+    header .navbar .navbar-brand img {
+      padding-top: 10px;
+      display: none; }
+      @media screen and (max-width: 991px) {
+        header .navbar .navbar-brand img {
+          display: block; } }
+    header .navbar .logo img {
+      padding-top: 10px; }
+      @media screen and (max-width: 991px) {
+        header .navbar .logo img {
+          display: none; } }
+    header .navbar .navbar-toggler i {
+      color: white;
+      width: 20px;
+      height: 20px;
+      padding-top: 7px; }
+  header .first {
+    padding-bottom: 20px; }
+    header .first p {
+      font-size: 40px;
+      padding: 20px;
+      color: white; }
+    header .first a {
+      padding: 10px 20px; }
+    header .first .r1 {
+      padding-right: 10px; }
+    header .first .r2 {
+      padding-left: 10px; }
+
+/* Between */
+.hr {
+  width: 100%;
+  height: 20px;
+  background-color: white; }
+
+.content {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(rgba(63, 81, 181, 0.6), rgba(63, 81, 181, 0.2)); }
+  @media only screen and (max-width: 520px) {
+    .content {
+      width: 100%; } }
+  .content .card {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    padding: 20px 0;
+    margin: 15px 0; }
+  .content .card-header, .content .card-footer {
+    border: none;
+    background: transparent; }
+  .content span {
+    color: white;
+    font-size: 30px;
+    padding: 15px 20px 0 20px; }
+  .content p {
+    color: white;
+    font-size: 20px;
+    padding: 0 20px;
+    text-align: justify; }
+
+.cabin {
+  width: 100%;
+  background: url("../images/cabin.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 50%; }
+
+.rafting {
+  width: 100%;
+  background: url("../images/rafting.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 50%; }
+
+.orienteering {
+  width: 100%;
+  background: url("../images/orienteering.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 50%; }
+
+.climbing {
+  width: 100%;
+  background: url("../images/climbing.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 50%; }
+  @media only screen and (max-width: 520px) {
+    .climbing {
+      background-position-y: 0%;
+      background-position-x: 100%; } }
+
+.mushroom {
+  width: 100%;
+  background: url("../images/mushroom.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 50%; }
+
+.camping {
+  width: 100%;
+  background: url("../images/camping.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 50%; }
+  @media only screen and (max-width: 520px) {
+    .camping {
+      background-position-y: 0%;
+      background-position-x: 40%; } }
+
+.balloon {
+  width: 100%;
+  background: url("../images/balloon.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 40%; }
+  @media only screen and (max-width: 520px) {
+    .balloon {
+      background-position-y: 0%;
+      background-position-x: 100%; } }
+
+.quad {
+  width: 100%;
+  background: url("../images/quad.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 50%; }
+  @media only screen and (max-width: 520px) {
+    .quad {
+      background-position-y: 0%;
+      background-position-x: 50%; } }
+
+.hiking {
+  width: 100%;
+  background: url("../images/hiking.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 50%; }
+  @media only screen and (max-width: 520px) {
+    .hiking {
+      background-position-y: 0%;
+      background-position-x: 40%; } }
+
+.paragliding {
+  width: 100%;
+  background: url("../images/paragliding.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 50%; }
+  @media only screen and (max-width: 520px) {
+    .paragliding {
+      background-position-y: 0%;
+      background-position-x: 30%; } }
+
+.btn {
+  border: 1px solid white;
+  color: white;
+  padding: 5px 12px 0 12px;
+  border-radius: 0; }
+  .btn:focus {
+    outline: none; }
+  .btn:hover {
+    color: white;
+    background-color: #902857; }
+
+footer {
+  height: 90px;
+  background-color: black; }
+  footer p {
+    color: white;
+    font-size: 18px;
+    margin: 0; }
+    footer p a {
+      font-family: 'Poiret One', cursive;
+      color: #c3b4b4; }
+
+/*# sourceMappingURL=adventures.css.map */

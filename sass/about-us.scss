@@ -1,0 +1,42 @@
+@import "mixins";
+$hover: #902857;
+
+// ALL
+html, body {
+    @include all;
+}
+
+
+// LOADER
+.loader {
+    @include loader;
+}
+
+
+// FIRST CONTENT
+header {
+    background: url("../images/barn-2594975_1920-min.jpg") no-repeat;
+    background-size: cover;
+    height: 120vh;
+
+    .navbar {
+        @include navbar;
+    }
+
+}
+
+
+footer {
+    height: 90px;
+    background-color: black;
+    
+    p {
+        color: white;
+        font-size: 18px;
+        margin: 0;
+        a {
+            font-family: 'Poiret One', cursive;
+            color: 	#c3b4b4;
+        }
+    }
+}

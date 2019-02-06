@@ -1,0 +1,95 @@
+@mixin loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/816.gif') 50% 50% no-repeat #fff;
+}
+
+@mixin all {
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+@mixin navbar {
+    padding: 0;
+    border-bottom: 3px solid white;
+    
+    .navbar-nav {
+      margin: 0 auto;
+      height: 100%;
+      
+
+      li {
+        display: inline-block;
+        float: none;
+        padding: 0 20px;
+        margin: 5px 5px;
+
+        &:hover {
+          background-color: $hover;
+        }
+      }
+
+      .active {
+        background-color: $hover;
+      }
+    }
+
+    .nav-link {
+      color: white;
+      font-size: 27px;
+    }
+        
+    .navbar-brand {
+      padding: 0 20px 10px;;
+      margin: 0;
+    }
+        
+    .navbar-brand img {
+      padding-top: 10px;
+      display: none;
+
+        @media screen and (max-width: 991px) {
+          display: block;
+        }
+    }
+
+    .logo img {
+        padding-top: 10px;
+
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
+    }
+
+    .navbar-toggler i {
+      color: white;
+      width: 20px;
+      height: 20px;
+      padding-top: 7px;
+
+            // focus
+      }
+    }
+
+  .text {
+    width: 100%;
+    height: 70vh;
+    color: white;
+
+    h1 {
+      font-size: 70px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+}
+

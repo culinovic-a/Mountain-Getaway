@@ -1,0 +1,80 @@
+.text {
+  width: 100%;
+  height: 70vh;
+  color: white; }
+  .text h1 {
+    font-size: 70px; }
+  .text p {
+    font-size: 30px; }
+
+html, body {
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../images/816.gif") 50% 50% no-repeat #fff; }
+
+header {
+  background: url("../images/barn-2594975_1920-min.jpg") no-repeat;
+  background-size: cover;
+  height: 120vh; }
+  header .navbar {
+    padding: 0;
+    border-bottom: 3px solid white; }
+    header .navbar .navbar-nav {
+      margin: 0 auto;
+      height: 100%; }
+      header .navbar .navbar-nav li {
+        display: inline-block;
+        float: none;
+        padding: 0 20px;
+        margin: 5px 5px; }
+        header .navbar .navbar-nav li:hover {
+          background-color: #902857; }
+      header .navbar .navbar-nav .active {
+        background-color: #902857; }
+    header .navbar .nav-link {
+      color: white;
+      font-size: 27px; }
+    header .navbar .navbar-brand {
+      padding: 0 20px 10px;
+      margin: 0; }
+    header .navbar .navbar-brand img {
+      padding-top: 10px;
+      display: none; }
+      @media screen and (max-width: 991px) {
+        header .navbar .navbar-brand img {
+          display: block; } }
+    header .navbar .logo img {
+      padding-top: 10px; }
+      @media screen and (max-width: 991px) {
+        header .navbar .logo img {
+          display: none; } }
+    header .navbar .navbar-toggler i {
+      color: white;
+      width: 20px;
+      height: 20px;
+      padding-top: 7px; }
+
+footer {
+  height: 90px;
+  background-color: black; }
+  footer p {
+    color: white;
+    font-size: 18px;
+    margin: 0; }
+    footer p a {
+      font-family: 'Poiret One', cursive;
+      color: #c3b4b4; }
+
+/*# sourceMappingURL=about-us.css.map */

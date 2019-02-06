@@ -1,0 +1,198 @@
+@import "mixins";
+$hover: #902857;
+
+// ALL
+html, body {
+    @include all;
+}
+
+// LOADER
+.loader {
+    @include loader;
+}
+
+
+
+// FIRST CONTENT
+header {
+    width: 100%;
+    background: url("../images/bcc.png") no-repeat;
+    background-size: cover;
+
+    .navbar {
+        @include navbar;
+    }
+}
+
+
+// SECOND CONTENT
+.second {
+
+    .main {
+        background-color: #E0E0E0;
+        opacity: 0.8;
+        border: 8px solid white;
+        border-radius: 0;
+        margin: 70px 0;
+
+        p  {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .one {
+            background-color: transparent;
+            border: none;
+            padding-bottom: 20px;
+            
+            p {
+                font-size: 22px;
+                padding: 10px 0;
+
+                i {
+                    font-size: 30px;
+                    vertical-align: middle;
+                    color: #000;
+                }
+            }
+
+            span {
+                padding-top: 10px;
+
+                a {
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+
+                    i {
+                        color: #000;
+                        font-size: 25px;
+                        margin-right: 15px;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: #902857;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        .two {
+            background-color: transparent;
+            border: none;
+            padding-bottom: 20px;
+
+            input, textarea {
+                border: 1px solid #424242;
+                padding: 7px 5px;
+                border-radius: 3px;
+                margin-bottom: 10px;
+            }
+
+            input:focus, textarea:focus {
+                background-color: rgba(144, 40, 87, 0.3);
+                outline: none;
+            }
+
+            input {
+                width: 250px;
+                height: 30px;
+            }
+
+            textarea {
+                height: 30px;
+                width: 250px;
+                overflow: hidden;
+            }
+
+            label {
+                margin: 0;
+
+                i {
+                    vertical-align: middle;
+                }
+            }
+
+            .buttons {
+                
+                .btn {
+                    padding-bottom: 0;
+                    border: 1px solid #424242;
+                    border-radius: 3px;
+
+                    &:hover {
+                        background-color: #902857;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// FOOTER
+footer {
+    height: 90px;
+    background-color: black;
+    
+    p {
+        color: white;
+        font-size: 18px;
+        margin: 0;
+        a {
+            font-family: 'Poiret One', cursive;
+            color: 	#c3b4b4;
+        }
+    }
+}
+
+
+
+
+// MEDIA QUERIES
+//PORTRAIT
+@media screen and (max-width: 350px) {
+    header {
+        .main {
+            .row p {
+                font-size: 30px;
+            }
+
+            .two {
+                .input input{
+                    width: 160px;
+                }
+                .input textarea {
+                    width: 160px;
+                }
+            }
+            
+        }
+    }
+}
+
+// PORTRAIT
+@media screen and (max-width: 250px) {
+    header {
+        .main {
+            .row p {
+                font-size: 25px;
+            }
+
+            .two {
+                .input input{
+                    width: 145px;
+                }
+                .input textarea {
+                    width: 145px;
+                }
+            }
+            
+        }
+    }
+}
