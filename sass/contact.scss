@@ -137,16 +137,22 @@ header {
 
 // FOOTER
 footer {
-    height: 90px;
+    height: 150px;
     background-color: black;
     
     p {
         color: white;
         font-size: 18px;
         margin: 0;
+
         a {
             font-family: 'Poiret One', cursive;
             color: 	#c3b4b4;
+
+            &:hover {
+                text-decoration: none;
+                color: $hover;
+            }
         }
     }
 }

@@ -230,16 +230,36 @@ header {
 
 
 footer {
-    height: 90px;
-    background-color: black;
-    
-    p {
-        color: white;
-        font-size: 18px;
-        margin: 0;
-        a {
-            font-family: 'Poiret One', cursive;
-            color: 	#c3b4b4;
+    height: 150px;
+    background-color: #000;
+    color: #fff;
+    padding-top: 35px;
+       
+    .container {
+
+        span {
+            padding-top: 7px;
         }
+        
+        p {
+            color: white;
+            font-size: 18px;
+            margin: 0;
+    
+            a {
+                font-family: 'Poiret One', cursive;
+                color: 	#c3b4b4;
+    
+                &:hover {
+                    text-decoration: none;
+                    color: $hover;
+                }
+            }
+        }
+
+        @media screen and (max-width: 770px) {
+            display: flex;
+            flex-direction: column;
+          }
     }
 }

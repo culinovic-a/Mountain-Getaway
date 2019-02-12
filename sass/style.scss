@@ -4,7 +4,6 @@ $hover: #902857;
 // ALL
 html, body {
   @include all;
-    overflow-y: none;
 }
 
 // LOADER
@@ -51,20 +50,20 @@ header {
 .second {
 
     .card {
-        border: none;
-        padding: 40px 0 60px 0;
+      border: none;
+      padding: 40px 0 60px 0;
     }
 
     .hideme {
-        opacity: 0;
+      opacity: 0;
     }
 
     p {
-        font-size: 25px;
+      font-size: 25px;
     }
 
     .pp {
-        font-size: 25px;
+      font-size: 25px;
     }
 }
 
@@ -105,32 +104,17 @@ header {
       }
     }
 
-    ul {
-        padding: 0;
-      
-        &:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
+    .ul {
+      padding: 0;
     }
   
-    li {
+    .li {
       perspective: 400px;
       position: relative;
       display: inline-block;
       width: 200px;
       height: 200px;
       margin: 5px;
-      padding: 0;
-      list-style: none;
-    
-    // div  {
-    //   display: inline-block;
-    //   vertical-align: top;
-    //   text-decoration: none;
-    //   border-radius: 1px;
-    // }
     
     .normal1, .normal2, .normal3, .normal4, .normal5, .normal6, .normal7, .normal8, .normal9, .normal10 {
       width: 100%;
@@ -147,44 +131,51 @@ header {
 
 // FIFTH CONTENT
 .fifth {
-    background: url("../images/bcg112.jpg") no-repeat;
-    background-size: cover;
-    height: 60vh;
-    width: 100%;
+  background: url("../images/bcg112.jpg") no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
 }
 
 
 
 // FOOTER
 footer {
-    height: 140px;
-    background-color: #000;
-    color: #fff;
-    padding-top: 35px ;
+  height: 150px;
+  background-color: #000;
+  color: #fff;
+  padding-top: 35px;
 
-    p {
-      color: white;
-      font-size: 18px;
-      margin: 0;
-      a {
-          font-family: 'Poiret One', cursive;
-          color: 	#c3b4b4;
-      }
+  .container {
+    @media screen and (max-width: 770px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
-  
-   a {
+
+  p {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+
+    a {
+      font-family: 'Poiret One', cursive;
+      color: 	#c3b4b4;
+
+      &:hover {
+        text-decoration: none;
+        color: $hover;
+      }
+    }
+  }
+
+  i {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 5px;
+
     &:hover {
-      text-decoration: none;
       color: $hover;
     }
-   }
-        i {
-            color: #fff;
-            font-size: 22px;
-            margin: 0 5px;
-
-            &:hover {
-                color: $hover;
-            }
-        }
+  }
 }

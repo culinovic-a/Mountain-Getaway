@@ -13,21 +13,34 @@ html, body {
   padding: 0;
   max-width: 100%;
   overflow-x: hidden;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: visible; }
 
 .loader {
   position: fixed;
   left: 0px;
   top: 0px;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   z-index: 9999;
   background: url("../images/816.gif") 50% 50% no-repeat #fff; }
 
+#button {
+  font-size: 40px;
+  color: #902857;
+  position: fixed;
+  right: 50px;
+  bottom: 1%; }
+  @media screen and (max-width: 350px) {
+    #button {
+      right: 20px; } }
+  #button i {
+    border: 3px solid #fff;
+    border-radius: 50%; }
+
 header {
-  background: url("../images/barn-2594975_1920-min.jpg") no-repeat;
-  background-size: cover;
-  height: 120vh; }
+  background: url("../images/cc0-desktop-backgrounds-fog-7919-min.png") no-repeat;
+  background-size: cover; }
   header .navbar {
     padding: 0;
     border-bottom: 3px solid white; }
@@ -66,15 +79,93 @@ header {
       height: 20px;
       padding-top: 7px; }
 
+.second {
+  width: 100%;
+  padding-top: 40px; }
+  .second .intro {
+    color: white;
+    font-size: 60px; }
+  .second .text .card {
+    border: none;
+    border-radius: 0; }
+    .second .text .card p {
+      color: #424242;
+      font-size: 20px;
+      text-align: justify;
+      padding: 15px 15px; }
+
+.third {
+  width: 100%;
+  background-color: white; }
+  @media screen and (max-width: 770px) {
+    .third .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: around; } }
+  .third .card {
+    border: none;
+    border-radius: 0; }
+    .third .card p {
+      color: #424242;
+      font-size: 20px;
+      text-align: justify;
+      padding: 15px 15px; }
+  .third .video {
+    padding: 50px; }
+    .third .video video {
+      max-width: 100%;
+      height: auto; }
+
+.fourth {
+  width: 100%;
+  background: url("../images/nathan-dumlao-542538-unsplash.jpg") no-repeat;
+  background-size: cover; }
+  .fourth .card {
+    border: none;
+    border-radius: 0;
+    margin: 50px 0; }
+    .fourth .card p {
+      color: #424242;
+      font-size: 20px;
+      text-align: justify;
+      padding: 15px 15px; }
+
+.fifth {
+  width: 100%; }
+  .fifth .card {
+    border: none;
+    padding: 70px 0; }
+    .fifth .card .card-footer {
+      border: none;
+      background: white;
+      font-size: 28px; }
+
+.sixth {
+  height: 70vh;
+  width: 100%;
+  background: url("../images/recovered.jpg") no-repeat;
+  background-size: cover; }
+
 footer {
-  height: 90px;
-  background-color: black; }
-  footer p {
+  height: 150px;
+  background-color: #000;
+  color: #fff;
+  padding-top: 35px; }
+  @media screen and (max-width: 420px) {
+    footer .container {
+      display: flex;
+      flex-direction: column; } }
+  footer .container span {
+    padding-top: 7px; }
+  footer .container p {
     color: white;
     font-size: 18px;
     margin: 0; }
-    footer p a {
+    footer .container p a {
       font-family: 'Poiret One', cursive;
       color: #c3b4b4; }
+      footer .container p a:hover {
+        text-decoration: none;
+        color: #902857; }
 
 /*# sourceMappingURL=about-us.css.map */
